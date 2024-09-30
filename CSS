@@ -1,0 +1,199 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #aedd67;
+    color: #320c64;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #3a0d4d;
+    color: #dba0a0;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #d0f8aa;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #613361;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: url('banking-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    color: #0e0505;
+    animation: fadeIn 2s;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #c3c9ee;
+    margin-bottom: 20px;
+    animation: fadeIn 3s;
+}
+
+.cta-btn {
+    background-color: #00cc99;
+    color: #b798bd;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+    background-color: #003366;
+}
+
+/* Services Section */
+.services-section {
+    padding: 60px 20px;
+    background-color: #bedad1;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #003366;
+    animation: slideIn 1s;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 2px solid #58194b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #00cc99;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.contact-text {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #003366;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #b12057;
+    color: #c3b8f1;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #d8db32;
+}
+
+/* Footer */
+.footer {
+    background-color: #3b052e;
+    color: #dfa9a9;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(50px); }
+    100% { transform: translateY(0); }
+}
