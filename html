@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banking & Finance</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">GOLD SHIELD BANK</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "36029c9a-8ab8-45e6-8944-520abc3fa5fc", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "36edb34e-cc66-4a67-8fbc-2f4876e9ca26", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h2 class="hero-title">Secure & Innovative Banking Solutions</h2>
+            <p class="hero-subtitle">Empowering you with financial freedom.</p>
+            <a href="#services" class="cta-btn">Discover More</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3 class="card-title">Online Banking</h3>
+                    <p class="card-text">Easily manage your accounts with our intuitive online banking platform.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Loans & Credit</h3>
+                    <p class="card-text">Get the financial support you need with our tailored loan products.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Investment Planning</h3>
+                    <p class="card-text">Plan and invest wisely with our expert financial advisory services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="contact-text">Need more information? Get in touch with us today.</p>
+            <form action="#" method="POST" class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 FinServe. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
